@@ -17,7 +17,7 @@ export class ProductsComponent implements OnInit {
       this.products = [],
       this.selection = [],
 
-      this.products.push(new Product(++this.id, "Blue marshmellow", 4, 0, 'https://www.byrdie.com/thmb/lVfKDQHUDS4Xlxdv0CLs1Eyyo1Y=/800x800/smart/filters:no_upscale()/04031_a-174d61f164f94dca9faeb6ad73b57f24.jpg'));
+      this.products.push(new Product(++this.id, "Blue marshmellow", 4, 1, 'https://www.byrdie.com/thmb/lVfKDQHUDS4Xlxdv0CLs1Eyyo1Y=/800x800/smart/filters:no_upscale()/04031_a-174d61f164f94dca9faeb6ad73b57f24.jpg'));
     this.products.push(new Product(++this.id, "Pink heaven", 3, 0, 'http://res.cloudinary.com/lush/image/upload/v1542372220/lush_content/products/main/2018/11/web_marshmallow_world_community_bath_bombs_2018.jpg'));
     this.products.push(new Product(++this.id, "Rainbow", 6, 0, 'https://media1.popsugar-assets.com/files/thumbor/NT2zFTlkADfjgasMOe4hKa_h4UU/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/03/11/656/n/1922153/b114f43b4f3ce3eb_GroovyKindOfLove/i/Lush-Groovy-Kind-Love-Bath-Bomb.jpg'));
     this.products.push(new Product(++this.id, "Unicorn", 7, 0, 'https://www.justmylook.com/images/bomb-cosmetics-i-believe-in-unicorns-bath-bomb-p10631-26183_image.jpg'));
