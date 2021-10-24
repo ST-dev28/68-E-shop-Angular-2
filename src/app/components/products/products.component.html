@@ -1,2 +1,4 @@
 <app-cart [products]="products"></app-cart>
-<app-product *ngFor="let product of products" [product]="product" (pushId)="pushId(id)"></app-product>
+<div class="cards">
+    <app-product *ngFor="let product of products" [product]="product" (pushId)="pushId(id)"></app-product>
+</div>

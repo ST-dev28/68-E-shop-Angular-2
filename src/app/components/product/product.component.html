@@ -8,18 +8,26 @@
     <button (click)="onFavorite.emit()">Megstamiausias</button>
 </div>-->
 
-<body>
-    <div class="container">
-        <div class="produktas" [ngClass]="{'disc': product!.disc > 0}">
-            <img [src]="product?.image" alt="Produktas">
-            <h3 class="pavadinimas">{{product?.name}}</h3>
-            <!--<div class="kiekis">{{product?.qty}} pcs</div>-->
-            <div klass="kaina">{{product?.price}} EUR</div>
-        </div>
+<!--<div class="csrd" [ngClass]="{'disc': product!.disc > 0}">
+    <img [src]="product?.image" alt="Produktas">
+    <h3 class="pavadinimas">{{product?.name}}</h3>
+    <div class="kiekis">{{product?.qty}} pcs</div>
+    <div klass="kaina">{{product?.price}} EUR</div>
+</div>
+<div class="buttons">
+    <button (click)="product?.add()" (click)="pushId.emit()">add</button>
+    <button (click)="product?.remove()" [disabled]="!product?.reserved()">remove</button>
+</div>-->
 
-        <div class="buttons">
-            <button (click)="product?.add()" (click)="pushId.emit()">add</button>
-            <button (click)="product?.remove()" [disabled]="!product?.reserved()">remove</button>
-        </div>
+<div class="card" [ngClass]="{'disc': product!.disc > 0}">
+    <img class="img" [src]="product?.image" alt="Produktas">
+    <ul class="details">
+        <li>{{product?.name}}</li>
+        <!--<li>On stock: {{product?.qty}} pcs</li>-->
+        <li>Price: {{product?.price}} EUR/pc</li>
+    </ul>
+    <div class="btn">
+        <button (click)="product?.add()" (click)="pushId.emit()">add</button>
+        <button (click)="product?.remove()" [disabled]="!product?.reserved()">remove</button>
     </div>
-</body>
+</div>
