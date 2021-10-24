@@ -23,6 +23,9 @@ export class ProductsComponent implements OnInit {
     this.products.push(new Product(++this.id, "Unicorn", 7, 0, 'https://www.justmylook.com/images/bomb-cosmetics-i-believe-in-unicorns-bath-bomb-p10631-26183_image.jpg'));
     this.products.push(new Product(++this.id, "Sweet dream", 5, 0, 'https://www.lushusa.com/dw/image/v2/BDMQ_PRD/on/demandware.static/-/Sites-lushcosmetics-export/default/dwd8601a0d/images/product/01982_1.jpg?sw=450&sh=450'));
     this.products.push(new Product(++this.id, "Purple sprinkle", 5, 0, 'https://sc04.alicdn.com/kf/H507d96a4dd614bea97c7a7e75b90ae1eZ.jpg'));
+    this.products.push(new Product(++this.id, "Lavender", 5, 0, 'https://homesteadersofamerica.com/wp-content/uploads/2020/04/Lavender-Goats-Milk-Soap-8-of-9-scaled.jpg'));
+    this.products.push(new Product(++this.id, "Amber", 6, 0, 'https://lh3.googleusercontent.com/proxy/LR7Pca46TUrguMFzlcQkE6LI_hEFIRgani6ib5O5Eio5X_-wuTi6rGg2ZdWJtjUAw4pf80t5DIoiIR2ORKFEqAIXbZ1w1d36IZS6n20TJ_K3Pyv4ZFq3Mj-6EQ0'));
+    //this.products.push(new Product(++this.id, "Vanilla", 5, 0, 'https://i.pinimg.com/originals/b4/51/28/b45128f7a3c2452b65901ae21a8225a1.jpg'));
   }
 
   public pushId(id: number) {
