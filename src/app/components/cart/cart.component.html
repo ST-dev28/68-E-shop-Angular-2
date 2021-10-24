@@ -1,6 +1,8 @@
 <header>
-    <div>My cart: {{cartQty()}} pcs
-        <button class="cart-btn" *ngIf="cartQty() !== 0" (click)="showORnot()">{{showCart?"Slėpti krepšelį":"Rodyti
+    <div class="cart">My cart: {{cartQty()}} pcs
+        <img src="../assets/images/shopping-cart.png" alt="Cart" />
+        <button class="cart-btn" *ngIf="cartQty() !== 0" (click)="showORnot()">
+            {{showCart?"Slėpti krepšelį":"Rodyti
             krepšelį"}}</button>
     </div>
     <div *ngIf="showCart">

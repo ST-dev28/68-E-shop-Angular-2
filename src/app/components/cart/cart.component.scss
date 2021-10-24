@@ -1,4 +1,4 @@
-header{
+/*header{
     display: flex;
     margin: 5px;
     line-height: 50px;
@@ -14,8 +14,47 @@ header{
         .cart{
         margin-left: auto;
         }
+
+        img {
+            width: 30px;
+            cursor: pointer;
+            }   
         .cart-bth{
             max-height: 24px;
             width: 30px;
         }
-}
+*/
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(3, 115, 129);
+    border: 3px solid rgb(206, 13, 109);
+    border-radius: 10px;
+  
+    .cart {
+      position: relative;
+  
+      img {
+        width: 50px;
+        cursor: pointer;
+        margin-right: 100px;
+      }
+
+      .cart-bth{
+        max-height: 24px;
+        width: 30px;
+    }
+      .count {
+        position: absolute;
+        top: 4px;
+        right: 5px;
+        color: #d30909;
+        font-size: 15px;
+      }
+    }
+  }
