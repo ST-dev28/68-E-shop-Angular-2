@@ -1,0 +1,8 @@
+<div>My cart: {{cartQty()}} pcs
+    <button *ngIf="cartQty() !== 0" (click)="showORnot()">{{showCart?"Slėpti krepšelį":"Rodyti krepšelį"}}</button>
+</div>
+<div *ngIf="showCart">
+    <div *ngFor="let item of myCart()">
+        {{item.name}} {{item.qty}} pcs
+    </div>
+</div>

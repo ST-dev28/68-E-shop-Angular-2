@@ -5,7 +5,7 @@ import { Product } from 'src/app/models/product';
   selector: 'app-product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  //encapsulation: ViewEncapsulation.None
 })
 
 export class ProductComponent implements OnInit {
@@ -13,10 +13,10 @@ export class ProductComponent implements OnInit {
 public product?: Product;
 
 @Output()
-public onFavorite: EventEmitter<void>;
+public pushId: EventEmitter<void>;
 
   constructor() { 
-    this.onFavorite = new EventEmitter<void>();
+    this.pushId = new EventEmitter<void>();
   }
 
   ngOnInit(): void {
