@@ -249,7 +249,7 @@ text-align: center;
 
      .card {
       background-color: white;
-      color: black;
+      color: rgb(4, 56, 105);
       padding: 0.2rem;
       height: 18rem;
       display: flex;
@@ -286,11 +286,20 @@ text-align: center;
       padding: 4px;
       text-align: center;
       margin: 5px;
-      background-color: #cfcfcf;
+      background-color: #ffff;
+      color: rgb(4, 56, 105);
       cursor: pointer;
       border: none;
+      border: 1px solid rgb(206, 13, 109);
+      border-radius: 8px;
+      
   }
+  button:hover{
+    background-color: rgb(238, 174, 209);
+    transform: scale(1.05);}
+
   }
+
   }
 
 
