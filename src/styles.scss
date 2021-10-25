@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-/* You can add global styles to this file, and also import other style files */
 html,
 body,
 div,
@@ -126,41 +125,52 @@ table {
 }
 
 //END OF RESET//
-body{
-  padding: 0.5rem; 
-        background-color: rgb(182, 255, 148);
-        font-size: 20px;
-        background-image: url('https://img4.goodfon.com/wallpaper/nbig/0/c9/voda-babochki-bryzgi.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
 }
-  
+body {
+  padding: 0.5rem;
+  background-color: beige;
+  font-size: 20px;
+  background-image: url("https://img4.goodfon.com/wallpaper/nbig/0/c9/voda-babochki-bryzgi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-    //Screen larger than 300px? 1 column
-    @media screen and (max-width: 300px) {
-      .cards { grid-template-columns: repeat(1, 1fr); }
-      .card{
-          height: 15rem;;
-      }
-      .btn{
-          flex-direction: column;
-      }
-    }
-    
-    // Screen larger than 600px? 2 column 
-    @media screen and (min-width: 600px) {
-    .cards { grid-template-columns: repeat(2, 1fr); }
-    }
-    
-    // Screen larger than 900px? 3 columns
-    @media screen and (min-width: 900px) {
-    .cards { grid-template-columns: repeat(3, 1fr); }
-    }
-    
-    // Screen larger than 1200px? 6 column
-    @media screen and (min-width: 1200px) {
-      .cards { grid-template-columns: repeat(6, 1fr); }
-    }
-    
-  
+//Screen larger than 300px? 1 column
+@media screen and (max-width: 300px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    height: 15rem;
+  }
+  .btn {
+    flex-direction: column;
+  }
+}
+
+// Screen larger than 600px? 2 column
+@media screen and (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Screen larger than 900px? 3 columns
+@media screen and (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// Screen larger than 1200px? 6 column
+@media screen and (min-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
