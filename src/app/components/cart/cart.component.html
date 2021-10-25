@@ -1,9 +1,12 @@
 <header>
-    <div class="cart">{{cartQty()}}
-        <img src="../assets/images/shopping-cart.png" alt="Cart" />
+    <div class="cart">
+        <div class="cart-icon">
+            <img src="../assets/images/shopping-cart.png" alt="Cart" />
+            <i class="fa fa-shopping cart"></i>
+            <div class="count">{{cartQty()}}</div>
+        </div>
         <button class="cart-btn" *ngIf="cartQty() !== 0" (click)="showORnot()">
-            {{showCart?"Slėpti krepšelį":"Rodyti
-            krepšelį"}}</button>
+            {{showCart?"Hide chart":"show cart"}}</button>
     </div>
     <div *ngIf="showCart">
         <div *ngFor="let item of myCart()">
