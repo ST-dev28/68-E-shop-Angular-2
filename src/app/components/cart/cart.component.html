@@ -10,7 +10,7 @@
     </div>
     <div *ngIf="showCart">
         <div *ngFor="let item of myCart()">
-            {{item.name}} {{item.qty}} pcs
+            {{item.name}} {{item.qty}} pcs {{item.price * item.qty}} Eur
         </div>
     </div>
 </header>
