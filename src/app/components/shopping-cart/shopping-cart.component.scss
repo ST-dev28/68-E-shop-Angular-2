@@ -1,0 +1,182 @@
+$breakpoint: 500px;
+
+.cart-section {
+  padding: 40px 30px;
+  .container {
+    //padding: 20px 0;
+    //color: rgb(4, 56, 105);
+
+    h2 {
+      font-size: 40px;
+      padding: 30px 0;
+      color: rgb(206, 13, 109);
+    }
+    table {
+      font-family: arial, sans-serif;
+      //border-collapse: collapse;
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 15px;
+
+      tr {
+        td,
+        th {
+          //border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+          font-size: 20px;
+        }
+      }
+      .details:nth-child(even) {
+        background-color: #ddddddc7;
+      }
+      .total {
+        //float: right;
+        font-weight: 700;
+        background-color: rgba(206, 13, 110, 0.596);
+        line-height: 36px;
+
+        .sum {
+          text-align: right;
+        }
+      }
+      .head-line {
+        font-weight: 600;
+        text-align: right;
+        background-color: rgba(3, 114, 129, 0.5);
+        line-height: 36px;
+      }
+
+      .content {
+        display: flex;
+      }
+      .btn {
+        color: rgb(206, 13, 109);
+        font-size: 18px;
+        border: 1px solid rgb(206, 13, 109);
+        border-radius: 50%;
+        padding: 5px 9px;
+        background-color: #ffff;
+        font-weight: 700;
+        align-items: center;
+        align-content: center;
+        height: 30px;
+        width: 30px;
+        margin: 0 6px;
+      }
+      .trash {
+        width: 60px;
+        padding: 4px;
+        margin-left: 20px;
+        text-align: center;
+        background-color: #ffff;
+        color: rgb(4, 56, 105);
+        cursor: pointer;
+        border: 1px solid rgb(206, 13, 109);
+        border-radius: 8px;
+      }
+    }
+  }
+  @media all and (min-width: $breakpoint) {
+    //display: none;
+  }
+  &:hover,
+  &:focus {
+    outline: none;
+    filter: contrast(150%);
+  }
+}
+
+/*table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .btn {
+    background-color: red;
+    border-radius: 50%;
+    font-size: 16px;
+    margin: 0 6px;
+  }
+  span {
+    font-weight: 800;
+    font-size: 18px;
+  }
+  cart-btn {
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+  }
+}*/
+
+/*
+$accordionColour: darkcyan;
+$iconSize: 2em;
+$bw: 3px; // border width;
+$breakpoint: 500px;
+
+.Accordion {
+  position: relative;
+  top: -$bw;
+  left: -$bw; //compensate for border offset
+  width: 100%;
+  margin: 0 0 0.5em 0;
+  padding: 0.6em 0.6em 0.6em ($iconSize);
+  border-radius: 0.5em;
+  text-align: left;
+  border: solid $bw mix(black, $accordionColour, 15%);
+  background-color: $accordionColour;
+  font-weight: bold;
+  color: darken($accordionColour, 20%);
+  text-decoration: none;
+  transition: background-color 0.1s;
+  cursor: pointer;
+
+  @media all and (min-width: $breakpoint) {
+    display: none;
+  }
+  &:hover,
+  &:focus {
+    outline: none;
+    filter: contrast(150%);
+  }
+  &[aria-selected="true"] {
+    margin-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-width: 0;
+    background: mix(white, $accordionColour, 70%);
+  }
+  &:before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 0.3em;
+    margin-top: -($iconSize / 1.75);
+    font-weight: normal;
+    font-size: $iconSize;
+    line-height: $iconSize;
+    background-size: $iconSize $iconSize;
+  }
+  &[aria-selected="true"]:before {
+    content: "-";
+  }
+}
+
+.js-RtableTabs,
+.js-RtableAccordions {
+  min-width: 240px;
+}
+*/

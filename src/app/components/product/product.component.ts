@@ -14,9 +14,13 @@ public product?: Product;
 
 @Output()
 public pushId: EventEmitter<void>;
+public onItemAdded!: EventEmitter<void>;
+public onItemRemoved!: EventEmitter<void>;
 
   constructor() { 
     this.pushId = new EventEmitter<void>();
+    this.onItemAdded = new EventEmitter<void>();
+    this.onItemRemoved = new EventEmitter<void>();
   }
 
   ngOnInit(): void {

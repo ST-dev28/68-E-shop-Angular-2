@@ -38,4 +38,8 @@ export class Product {
 
         }
     }
+
+    public get priceWithDiscount(): number {
+    return this.price - (this.price * (this.disc / 100));
+  }
 }
