@@ -1,12 +1,15 @@
 <header>
+    <a class="home" routerLink="/products">Home</a>
     <div class="cart">
         <div class="cart-icon">
             <img src="../assets/images/shopping-cart.png" alt="Cart" />
             <i class="fa fa-shopping cart"></i>
             <div class="count">{{cartQty()}}</div>
         </div>
-        <button class="cart-btn" *ngIf="cartQty() !== 0" (click)="showORnot()">
-            {{showCart?"Hide chart":"show cart"}}</button>
+        <a routerLink="/shopping-cart">
+            <button class="cart-btn" *ngIf="cartQty() !== 0" (click)="showORnot()">
+                {{showCart?"Hide chart":"show cart"}}</button>
+        </a>
     </div>
     <div *ngIf="showCart">
         <div *ngFor="let item of myCart()">

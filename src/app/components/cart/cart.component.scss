@@ -10,6 +10,16 @@ header {
   border-style: inset;
   border-radius: 10px;
 
+  .home {
+    margin-right: auto;
+    padding: 12px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 50px;
+    font-style: italic;
+    color: rgb(206, 13, 109);
+    text-decoration: none;
+  }
   .cart {
     position: relative;
 
@@ -21,11 +31,6 @@ header {
         width: 50px;
         cursor: pointer;
         margin-right: 100px;
-      }
-
-      i {
-        font-size: 24px;
-        color: #fff;
       }
 
       .count {

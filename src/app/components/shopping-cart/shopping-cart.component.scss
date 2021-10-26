@@ -1,7 +1,7 @@
 $breakpoint: 500px;
 
 .cart-section {
-  padding: 40px 30px;
+  padding: 0 30px;
   .container {
     //padding: 20px 0;
     //color: rgb(4, 56, 105);
@@ -27,9 +27,13 @@ $breakpoint: 500px;
           font-size: 20px;
         }
       }
-      .details:nth-child(even) {
+      .details {
         background-color: #ddddddc7;
       }
+      /*
+      .details:nth-child(even) {
+        background-color: #ddddddc7;
+      }*/
       .total {
         //float: right;
         font-weight: 700;
