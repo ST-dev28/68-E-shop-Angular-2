@@ -11,6 +11,11 @@ const routes: Routes = [
   {
     path: 'shopping-cart',
     component: ShoppingCartComponent,
+  },
+  {
+    path: '',
+    redirectTo: 'products',
+    pathMatch: 'full',
   }
 ];
 
