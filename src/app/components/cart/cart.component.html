@@ -6,7 +6,7 @@
             <i class="fa fa-shopping cart"></i>
             <div class="count">{{cartQty()}}</div>
         </div>
-        <a routerLink="#">
+        <a routerLink="/shopping-cart">
             <button class="cart-btn" *ngIf="cartQty() !== 0" (click)="showORnot()">
                 {{showCart?"Hide chart":"show cart"}}</button>
         </a>
